@@ -1,0 +1,109 @@
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+/* Responsive Typography */
+.hero-title {
+  font-family: "Sacramento", cursive;
+  font-weight: normal;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+}
+
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #66bfbf;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+/* Hero section positioning */
+#hero {
+  background-color: #e4f9f5;
+  color: #66bfbf;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+
+/* Responsive Clouds - Made Transparent */
+.cloud-1 {
+  width: clamp(80px, 15vw, 120px);
+  top: 80px;
+  right: 5%;
+  opacity: 0.1;
+  z-index: 5;
+}
+
+/* Cloud 2 - in the mint background, just above where mountain starts */
+.cloud-2 {
+  width: clamp(100px, 18vw, 150px);
+  position: absolute;
+  bottom: 65%;
+  left: 8%;
+  opacity: 0.1;
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .cloud-1 {
+    top: 100px;
+    right: 2%;
+  }
+  .cloud-2 {
+    bottom: 65%;
+    left: 5%;
+    width: clamp(70px, 15vw, 100px);
+  }
+}
+
+@media (max-width: 480px) {
+  .cloud-2 {
+    bottom: 65%;
+    left: 3%;
+  }
+}
+
+/* Mountain container */
+.mountain-container {
+  margin-top: auto;
+  position: relative;
+}
+
+/* Skill Images */
+.skill-img {
+  max-width: 100%;
+  width: 250px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .skill-img {
+    width: 200px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Section Typography */
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #66bfbf;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+.skill-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #66bfbf;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
