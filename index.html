@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaikat - Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+    <!-- Navigation Bar (Fixed to top) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero" style="font-weight: 600;">Shaikat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-center">
+
+        <!-- Cloud 1 - Top Right (More Transparent) -->
+        <img src="./assets/images/cloud 1.jpg" alt="cloud decoration" class="position-absolute cloud-1" />
+
+        <!-- Cloud 2 - Bottom Left in mint area, ABOVE the mountain -->
+        <img src="./assets/images/cloud 2.jpg" alt="cloud decoration" class="position-absolute cloud-2" />
+
+        <!-- Main Content - Centered -->
+        <div class="container px-3"
+            style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding-top: 50px; padding-bottom: 50px;">
+            <h1 class="hero-title mb-3">I'm Shaikat.</h1>
+            <p class="hero-subtitle">an aspiring web developer.</p>
+        </div>
+
+        <!-- Mountain at Bottom -->
+        <div class="mountain-container">
+            <img src="./assets/images/Mountain.jpg" alt="Mountain landscape" class="img-fluid w-100"
+                style="display: block; margin-bottom: -5px;" />
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center" style="background-color: #fff;">
+        <div class="container px-3">
+            <img src="./assets/images/Profile Picture.jpg" alt="Shaikat's profile picture"
+                class="img-fluid rounded-circle mb-4 shadow"
+                style="width: clamp(150px, 30vw, 200px); height: clamp(150px, 30vw, 200px); object-fit: cover;" />
+            <h2 class="mb-4 section-title">Hello.</h2>
+            <p class="lead px-3"
+                style="font-weight: 300; color: #40514E; max-width: 600px; margin: 0 auto; font-size: clamp(1rem, 2.5vw, 1.25rem);">
+                I am a Product Manager who loves to solve problems through building applications. ❤️
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5" style="background-color: #F8F9FA;">
+        <div class="container px-3">
+            <h2 class="text-center mb-5 section-title">My Skills</h2>
+
+            <ul class="list-unstyled">
+                <!-- Skill 1 -->
+                <li class="row mb-5 align-items-center g-4">
+                    <div class="col-md-4 text-center">
+                        <img src="./assets/images/shocked-dumb-cat.gif" alt="Product Management icon"
+                            class="img-fluid shadow skill-img" />
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="mb-3 skill-title">Product Management</h3>
+                        <p style="font-weight: 300; color: #40514E; font-size: clamp(0.9rem, 2vw, 1rem);">
+                            I am a Product Manager with experience in leading cross-functional teams and delivering
+                            successful products.
+                        </p>
+                    </div>
+                </li>
+
+                <!-- Skill 2 -->
+                <li class="row mb-5 align-items-center g-4">
+                    <div class="col-md-4 text-center">
+                        <img src="./assets/images/vehicle-move.jpg" alt="Biking icon"
+                            class="img-fluid shadow skill-img" />
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="mb-3 skill-title">Biking</h3>
+                        <p style="font-weight: 300; color: #40514E; font-size: clamp(0.9rem, 2vw, 1rem);">
+                            I enjoy biking and exploring new trails in nature.
+                        </p>
+                    </div>
+                </li>
+
+                <!-- Skill 3 -->
+                <li class="row mb-5 align-items-center g-4">
+                    <div class="col-md-4 text-center">
+                        <img src="./assets/images/Nature.jpg" alt="Travel icon" class="img-fluid shadow skill-img" />
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="mb-3 skill-title">Hiking</h3>
+                        <p style="font-weight: 300; color: #40514E; font-size: clamp(0.9rem, 2vw, 1rem);">
+                            I love to hike and explore new trails in nature.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center" style="background-color: #66BFBF; color: white;">
+        <div class="container px-3">
+            <h2 class="mb-4" style="font-weight: 600; font-size: clamp(2rem, 5vw, 2.5rem);">Get In Touch</h2>
+            <p class="lead mb-4 px-3" style="font-weight: 300; font-size: clamp(1rem, 2.5vw, 1.25rem);">
+                If you'd like to collaborate or just say hello.
+            </p>
+            <a href="mailto:shaikat@example.com" class="btn btn-light btn-lg" style="font-weight: 500;">
+                Contact Me
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container px-3">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <a href="#hero" class="text-white text-decoration-none me-2 me-md-3 d-inline-block mb-2">Home</a>
+                    <a href="#about" class="text-white text-decoration-none me-2 me-md-3 d-inline-block mb-2">About</a>
+                    <a href="#skills"
+                        class="text-white text-decoration-none me-2 me-md-3 d-inline-block mb-2">Skills</a>
+                    <a href="#contact" class="text-white text-decoration-none d-inline-block mb-2">Contact</a>
+                </div>
+            </div>
+            <p class="mb-0" style="font-weight: 300; font-size: clamp(0.875rem, 2vw, 1rem);">© 2025 Shaikat. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
